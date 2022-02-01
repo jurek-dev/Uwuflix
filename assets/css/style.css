@@ -5,7 +5,7 @@
 :root {
     --netflix-red: #E50914;
     --netflix-darkred: #B20710;
-    --netflix-black : #141414;
+    --netflix-black : #000000;
 }
 
 /* CSS Reset */
@@ -48,7 +48,7 @@ header nav a:hover {
 /* Filme principal */
 
 div.main-movie {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('/assets/img/mini03.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) 100%), linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 100%), url('/assets/img/shingeki-capa2.jpg');
     height: 400px;
     background-size: cover;
 
@@ -56,6 +56,8 @@ div.main-movie {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    margin-left: 5em;
 }
 
 .container .description {
@@ -104,4 +106,13 @@ button.botao:hover {
 
 .carousel-movies {
     margin-top: 5px;
+}
+
+.container .category-movies {
+    margin-left: 3.5em;
+    margin-top: 1em;
+    font-family: Arial;
+    font-size: 1rem;
+    color: #AAA;
+    font-weight: bold;
 }

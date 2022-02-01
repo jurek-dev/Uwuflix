@@ -1,0 +1,107 @@
+/* Import's Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+:root {
+    --netflix-red: #E50914;
+    --netflix-darkred: #B20710;
+    --netflix-black : #141414;
+}
+
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--netflix-black);
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1.display-01 {
+    margin-left: 1em;
+    font-family: Bebas Neue;
+    color: var(--netflix-red);
+    cursor: default;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-family: Calibri;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Filme principal */
+
+div.main-movie {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('/assets/img/shingeki-capa.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container .description {
+    margin-bottom: 40px;
+}
+
+h1.title {
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+button.botao {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 1em;
+    margin-right: 1rem;
+    cursor: pointer;
+
+    transition: .5s ease all;
+}
+
+button.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.main-movie .container {
+    width: 70%;
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-movies {
+    margin-top: 5px;
+}

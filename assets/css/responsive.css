@@ -15,4 +15,8 @@
     .description {
         width: 70%;
     }
+
+    div.main-movie {
+        margin-left: 5em;
+    }
 }
